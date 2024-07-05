@@ -6,7 +6,7 @@ from django.http import JsonResponse
 def info(request):
     """
     """
-     name= request.GET.get("visitor_name", "Guest")
+    name= request.GET.get("name", "Guest")
     clientIp = request.META.get("REMOTE_ADDR", "Unknown IP")
     location = "Nigeria" 
     response = {
